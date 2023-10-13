@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Fonte Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+  rel="stylesheet">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Boletim de Notícias</title>
+
+</head>
+
+<body>
+  <!-- Página inícial de cadastro -->
+  <div id="container">
+    <div id="container_cadastro">
+      <h1>
+        Fique atualizado!
+      </h1>
+      <p>
+        Junte-se a mais de 60.000 pessoas que recebem atualizações mensais sobre os nossos produtos:
+      </p>
+      <!-- List produtos -->
+      <ol>
+        <li><img src="/assets/images/icon-list.svg" alt="#">
+          Descubra produtos e ferramentas inovadores.
+        </li>
+        <li><img src="/assets/images/icon-list.svg" alt="">
+          Indicadores que irão te auxiliar no seu sucesso.
+        </li>
+        <li><img src="/assets/images/icon-list.svg" alt="">
+          E muito mais!
+        </li>
+      </ol>
+      <!-- Formulário -->
+      <div id="cadastro">
+        <form id="formulario">
+          <label>
+            Endereço de email
+          </label>
+          <input id="email_cadastro" name="email" type="email" placeholder="email@company.com" required>
+          <input type="submit" id="submit" value="Inscreva-se no nosso boletim de notícias mensal">
+        </form>
+        <h3 id="erro_cadastro"></h3>
+      </div>
+    </div>
+    
+    <div id="image_cadastro">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="#">
+    </div>
+  </div>
+  <!-- Fim página inicial -->
+
+  <!-- Início cadastro finalizado -->
+  <div id="container_sucesso">
+    <img src="/assets/images/icon-success.svg" alt="#">
+    <h2>
+      Obrigado por se inscrever!
+    </h2>
+    <p>
+      Um email de confirmação foi enviado para <strong><span id="emailCadastrado"></span></strong>.
+      <br>
+      Verifique a sua caixa de entrada e clique em confirmar a sua inscrição.  
+    </p>
+    <button onclick="fechar()">
+      Fechar
+    </button>
+  </div>
+  <!-- Fim cadastro finalizado -->
+
+  <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
