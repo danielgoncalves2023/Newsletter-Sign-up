@@ -21,12 +21,7 @@ function inscreverNewsletter(event) {
         novoEmail.style.border = '2px solid red';
 
     } else {
-        if (pageCadastro.style.display == 'grid') {
-            displayGrid = true;
-        } else {
-            displayFlex = true;
-        }
-
+        
     // Transição de página cadastro, para cadastro finalizado
     pageCadastro.style.display = 'none';
     pageSucesso.style.display = 'flex';
