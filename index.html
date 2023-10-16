@@ -6,24 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <!-- Fonte Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
   <!-- Style CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style/style.css">
 
   <title>Boletim de Notícias</title>
 
 </head>
 
 <body>
-  <!-- Página inícial de cadastro desktop -->
+  <!-- Página inícial de cadastro -->
   <div id="container">
     <div id="container_cadastro">
       <div id="image_cadastro_mobile">
-        <img src="/assets/images/illustration-sign-up-mobile.svg" alt="#">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="#">
       </div>
       <h1>
         Atualize-se!
@@ -33,20 +33,20 @@
       </p>
       <!-- List produtos -->
       <ol>
-        <li><img src="/assets/images/icon-list.svg" alt="#">
+        <li><img src="assets/images/icon-list.svg" alt="#">
           Descubra produtos e ferramentas inovadores.
         </li>
-        <li><img src="/assets/images/icon-list.svg" alt="">
+        <li><img src="assets/images/icon-list.svg" alt="">
           Indicadores que irão te auxiliar no seu sucesso.
         </li>
-        <li><img src="/assets/images/icon-list.svg" alt="">
+        <li><img src="assets/images/icon-list.svg" alt="">
           E muito mais!
         </li>
       </ol>
       <!-- Formulário -->
       <div id="cadastro">
         <form onsubmit="inscreverNewsletter(event)" method="get" id="formulario">
-          <label>Endereço de email<span id="erro_email"></span></label>
+          <label>Endereço de email</label>    <span id="erro_email"></span>
           <input id="email_cadastro" name="email" type="email" placeholder="email@company.com" required>
           <input type="submit" id="submit" value="Cadastre-se no nosso boletim de notícias">
         </form>
@@ -54,14 +54,14 @@
     </div>
 
     <div id="image_cadastro_desktop">
-      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="#">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="#">
     </div>
   </div>
-  <!-- Fim página inicial destkop -->
+  <!-- Fim página inicial -->
 
-  <!-- Início cadastro finalizado desktop -->
+  <!-- Início cadastro finalizado -->
   <div id="container_sucesso">
-    <img src="/assets/images/icon-success.svg" alt="#">
+    <img src="assets/images/icon-success.svg" alt="#">
     <h2>
       Obrigado por se inscrever!
     </h2>
@@ -74,9 +74,9 @@
       Fechar
     </button>
   </div>
-  <!-- Fim cadastro finalizado desktop -->
+  <!-- Fim cadastro finalizado -->
 
-  <script type="text/javascript" src="/script.js"></script>
+  <script type="text/javascript" src="/assets/script/script.js"></script>
 </body>
 
 </html>
