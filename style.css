@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(102, 102, 102);
+    background: rgb(92, 92, 92);
 }
 
 #container {
@@ -21,7 +21,6 @@ body {
 }
 
 #container_cadastro {
-    padding: 0 0 0 20px;
     overflow: hidden;
 }
 
@@ -40,15 +39,23 @@ li {
 }
 
 ol {
-    margin: 1.6rem .5rem;
+    margin: 1rem .5rem;
 }
 
 ol img {
     margin-right: 10px;
 }
 
-#image_cadastro img {
+#image_cadastro_mobile {
+    display: none;
+}
+
+#image_cadastro_desktop {
     width: 100%;
+}
+
+#image_cadastro_desktop img {
+    width: 100%; 
 }
 
 #cadastro {
@@ -57,12 +64,12 @@ ol img {
 
 label, input, button {
     margin: 5px;
-    width: 100%;
+    width: 90%;
 }
 
 input, button {
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 #submit {
@@ -103,4 +110,62 @@ input, button {
     padding: 20px;
     font-size: 1.5rem;
     margin: 20px auto 0;
+}
+
+#container_mobile {
+    display: none;
+}
+
+@media (max-width: 690px) {
+    label, input, button {
+        margin: 14px;
+        width: 90%;
+    }
+
+    #image_cadastro_desktop {
+        display: none;
+    }
+
+    #image_cadastro_mobile {
+        display: flex;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        border-radius: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    #container_mobile {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 8px;
+        width: 100%;
+        align-items: center;
+    }
+
+    #image_cadastro_mobile img {
+        display: flex;
+        width: 100%;
+    }
+
+    h1, p, ol, #cadastro_mobile {
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 815px) {
+    #container {
+        width: 95%;
+        align-items: center;
+        margin: 20px auto;
+    }
+    
+    #image_cadastro img {
+        width: 100%; 
+    }
 }

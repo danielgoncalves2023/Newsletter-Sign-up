@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!-- Fonte Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
   <!-- Style CSS -->
   <link rel="stylesheet" href="style.css">
 
@@ -18,11 +19,14 @@
 </head>
 
 <body>
-  <!-- Página inícial de cadastro -->
+  <!-- Página inícial de cadastro desktop -->
   <div id="container">
     <div id="container_cadastro">
+      <div id="image_cadastro_mobile">
+        <img src="/assets/images/illustration-sign-up-mobile.svg" alt="#">
+      </div>
       <h1>
-        Fique atualizado!
+        Atualize-se!
       </h1>
       <p>
         Junte-se a mais de 60.000 pessoas que recebem atualizações mensais sobre os nossos produtos:
@@ -41,24 +45,21 @@
       </ol>
       <!-- Formulário -->
       <div id="cadastro">
-        <form id="formulario">
-          <label>
-            Endereço de email
-          </label>
+        <form onsubmit="inscreverNewsletter(event)" method="get" id="formulario">
+          <label>Endereço de email<span id="erro_email"></span></label>
           <input id="email_cadastro" name="email" type="email" placeholder="email@company.com" required>
-          <input type="submit" id="submit" value="Inscreva-se no nosso boletim de notícias mensal">
+          <input type="submit" id="submit" value="Cadastre-se no nosso boletim de notícias">
         </form>
-        <h3 id="erro_cadastro"></h3>
       </div>
     </div>
-    
-    <div id="image_cadastro">
+
+    <div id="image_cadastro_desktop">
       <img src="/assets/images/illustration-sign-up-desktop.svg" alt="#">
     </div>
   </div>
-  <!-- Fim página inicial -->
+  <!-- Fim página inicial destkop -->
 
-  <!-- Início cadastro finalizado -->
+  <!-- Início cadastro finalizado desktop -->
   <div id="container_sucesso">
     <img src="/assets/images/icon-success.svg" alt="#">
     <h2>
@@ -67,14 +68,15 @@
     <p>
       Um email de confirmação foi enviado para <strong><span id="emailCadastrado"></span></strong>.
       <br>
-      Verifique a sua caixa de entrada e clique em confirmar a sua inscrição.  
+      Verifique a sua caixa de entrada e clique em confirmar a sua inscrição.
     </p>
     <button onclick="fechar()">
       Fechar
     </button>
   </div>
-  <!-- Fim cadastro finalizado -->
+  <!-- Fim cadastro finalizado desktop -->
 
   <script type="text/javascript" src="/script.js"></script>
 </body>
+
 </html>
