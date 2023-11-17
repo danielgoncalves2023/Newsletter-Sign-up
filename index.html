@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <!-- Fonte Roboto -->
@@ -15,7 +14,6 @@
   <link rel="stylesheet" href="assets/style/style.css">
 
   <title>Boletim de Notícias</title>
-
 </head>
 
 <body>
@@ -46,8 +44,8 @@
       <!-- Formulário -->
       <div id="cadastro">
         <form onsubmit="inscreverNewsletter(event)" method="get" id="formulario">
-          <label>Endereço de email</label>    <span id="erro_email"></span>
-          <input id="email_cadastro" name="email" type="email" placeholder="email@company.com" required>
+          <label id="erro_email">Endereço de email</label>
+          <input id="email_cadastro" name="email" type="text" placeholder="email@company.com">
           <input type="submit" id="submit" value="Cadastre-se no nosso boletim de notícias">
         </form>
       </div>
